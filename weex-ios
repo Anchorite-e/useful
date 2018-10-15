@@ -1,0 +1,15 @@
+weex 打包配置 ios.config.json
+1、"CodeSign.p12"，双击安装。
+然后去mac的"钥匙串访问"，找到"我的证书" ->右键 "显示简介"，复制"常用名称"，这就得到了CodeSign
+2、下载文件"mobileprovision_UUID.sh"，再找ios开发要到文件"*.mobileprovision"，
+最好两个文件放在一起，命令行：./mobileprovision_UUID.sh *.mobileprovision，就得到了Profile
+
+{
+  "AppName": "WeexApp",
+  "Version": "0.1",
+  "BuildVersion": "0.1.0",
+  "AppId": "com.xpfei.weex",
+  "CodeSign": "iPhone Distribution: ****",
+  "Profile": "ef145273-**-**-**-**",
+  "WeexBundle": "index.js"
+}
